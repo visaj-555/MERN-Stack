@@ -11,8 +11,7 @@ function App() {
   }
   return  <div className = 'App'> 
   <h1 onClick={updateData}> {data} </h1>
-  <h4> Getting Input Box Value </h4>
-  <input type  = "text" ></input>
+
 
   <Hello/>
   <Visaj/>
