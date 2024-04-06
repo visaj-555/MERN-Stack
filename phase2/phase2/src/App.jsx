@@ -1,26 +1,23 @@
-import React, { useState } from 'react'
+import React from 'react';
 
 function App() {
+  const [inputValue, setInputValue] = React.useState("");
+  const [status, setStatus] =  React.useState(true);
 
-const [inputValue, setInputValue] = useState("");
-// const [data, setData] = useState("Welcome");
-const handleChange = (event) => 
-{
-  setInputValue(event.target.value);
-};
-
-const handleClick = (event) => 
-{
-  setInputValue(event.target.value);
-};
-
+  const handleChange = (event) => {
+    setInputValue(event.target.value);
+  };
 
   return (
-      <div>
-           <h1> {inputValue} </h1>
-           <input type="text" onChange = {handleChange} />
-      </div>
-  )
+    <div>
+      {/* {status ? <h1> {inputValue}</h1> : null} */}
+      {status ? <h1> VISAJ </h1> : null}
+      <input type="text" onChange={handleChange} />
+      {/* <button onClick={() => setStatus(false)}>Hide</button>
+      <button onClick={() => setStatus(true)}>Show</button> */}
+      <button onClick={() => setStatus(!status)}>Toggle </button>
+        </div>
+  );
 }
 
-export default App
+export default App;
