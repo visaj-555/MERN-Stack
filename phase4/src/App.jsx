@@ -5,7 +5,7 @@ import Alert from 'react-bootstrap/Alert';
 import Card from 'react-bootstrap/Card';
 import Nav from 'react-bootstrap/Nav';
 import Student from './components/Student';
-
+import User from './components/User';
 
 function App() {
   // const [data, setData] = useState("Visaj");
@@ -14,6 +14,11 @@ function App() {
   //   This is a success alert—check it out!
   //   </Alert>  
   // }
+
+  function parentAlert(data){
+    alert(data);
+  }
+
 
   return (
     <React.Fragment>
@@ -50,7 +55,8 @@ function App() {
         <Button variant="primary">Go somewhere</Button>
       </Card.Body>
     </Card> */}
-
+      <User alert = {parentAlert}> 
+        </User>
     </React.Fragment>
   );
 }
