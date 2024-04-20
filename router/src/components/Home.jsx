@@ -1,9 +1,11 @@
 // Home.jsx
 import React from 'react'
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 
 function Home() {
   const navigate = useNavigate();
+   const location = useLocation();
+   console.log(location);
   return (
     <div>
         <h1> Home page </h1>
