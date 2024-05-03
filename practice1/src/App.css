@@ -1,0 +1,9 @@
+.baskets {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .basket-container {
+    margin-top: 20px; /* adjust as needed */
+  }
+  
