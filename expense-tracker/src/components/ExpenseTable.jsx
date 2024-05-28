@@ -10,14 +10,7 @@ function ExpenseTable({ expenses }) {
         <tr>
           <th>Title</th>
           <th>
-            <select>
-              <option value="">All</option>
-              <option value="grocery">Grocery</option>
-              <option value="clothes">Clothes</option>
-              <option value="bills">Bills</option>
-              <option value="education">Education</option>
-              <option value="medicine">Medicine</option>
-            </select>
+          
           </th>
           <th className="amount-column">
             <div>
